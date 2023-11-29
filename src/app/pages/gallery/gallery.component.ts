@@ -17,11 +17,11 @@ import {environment} from '../../../environments/environment';
 export class GalleryComponent {
 
   hero: Gallery = {
-    url: 'http://localhost:3000/upload/images/leaf-eda9.webp?resolution=4344_2896'
+    url: 'http://localhost:3000/upload/images/leaf-9664.webp?resolution=4344_2896'
   };
 
   // rawSrcset = '640w, 750w, 828w, 1080w, 1200w, 1920w, 2048w, 3840w';
-  rawSrcset = '640w, 750w, 828w, 1080w, 1200w, 1920w';
+  rawSrcset = '640w, 750w, 828w, 1080w, 1200w, 1920w, 2048w';
 
   images: any[] = [];
 
