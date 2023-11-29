@@ -1,0 +1,24 @@
+
+<div class="header">
+  <button mat-raised-button color="primary" (click)="onAddBlog()">
+    <mat-icon>add</mat-icon>
+    Add Blog
+  </button>
+</div>
+
+@defer (when !isLoading) {
+  <div class="content">
+    <div class="grid">
+      @for (item of blogs; track $index) {
+        <app-blog-card [data]="item"></app-blog-card>
+      }
+    </div>
+  </div>
+} @loading () {
+  <div class="loader">
+    <p>Loading</p>
+  </div>
+}
+
+
+

@@ -1,0 +1,41 @@
+<h1>Demo Gallery</h1>
+
+<img [ngSrc]="hero.url | imgCtrl : 'filename'"
+     [ngSrcset]="rawSrcset"
+     sizes="100vw"
+     [width]="hero.url | imgCtrl : 'width'" [height]="hero.url | imgCtrl : 'height'" [alt]="" [priority]="0">
+
+<!--<div class="card">-->
+<!--  <div class="left">-->
+<!--    <img [ngSrc]="hero.name"-->
+<!--         [width]="hero.width"-->
+<!--         [height]="hero.height"-->
+<!--         [ngSrcset]="rawSrcset"-->
+<!--         sizes="50vw"-->
+<!--         alt="">-->
+<!--  </div>-->
+<!--  <div class="right">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi atque dolore doloremque eos nam nemo nisi omnis possimus quia ratione saepe sed tempora veniam, voluptate. Ab aut consequatur cupiditate.</p>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="filter">
+  <p *ngFor="let data of [1,2,3,4,5,6]">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi expedita labore molestiae rerum vel?
+  </p>
+</div>
+
+<div class="gallery-view-item" *ngFor="let data of images">
+  <div class="text">
+    <p *ngFor="let data of [1,2,3,4,5,6]">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus nesciunt reprehenderit suscipit!
+    </p>
+  </div>
+  <img [ngSrc]="data.name"
+       [width]="data.width"
+       [ngSrcset]="rawSrcset"
+       sizes="100vw"
+       [height]="data.height"
+       [alt]="">
+</div>

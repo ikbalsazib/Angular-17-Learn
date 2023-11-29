@@ -1,0 +1,23 @@
+
+.header {
+  width: 95%;
+  max-width: 1300px;
+  margin: 12px auto;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 16px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.content {
+  width: 95%;
+  max-width: 1300px;
+  margin: 12px auto;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+  }
+}

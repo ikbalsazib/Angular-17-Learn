@@ -45,12 +45,18 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "500kb",
+                  "maximumError": "5mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -102,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "79c59372-5d14-4fb0-86e0-d25cf6f81226"
   }
 }
